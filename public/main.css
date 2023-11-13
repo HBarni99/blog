@@ -154,8 +154,3 @@ h6{
     margin-top: 100px;
     text-align: center;
 }
-@media (max-width: 979px) {
-    body {
-      padding-top: 0px;
-    }
-  }
