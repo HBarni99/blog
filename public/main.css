@@ -1,0 +1,161 @@
+body{
+    background-color:#9BBEC8;
+    padding-top: 65px; 
+}
+header{
+    margin-bottom: 20px;
+}
+.alairas{
+    text-align:right;
+}
+.focim{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.fooldal-bejegyzes{ 
+    height:60px;
+    line-height:20px; /* Height / no. of lines to display */
+    overflow:hidden;
+}
+form{
+    margin: 40px;
+}
+input[type=text] {
+    width: 100%;
+}
+textarea{
+    height: 150px;
+    width: 100%;
+    resize: none;
+}
+.bejegyzesek-container-flex{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.bejegyzesek-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+.jobbra{
+    text-align: right;
+    margin-right: 15px;
+}
+.bejegyzes-div{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:#DDF2FD ;  
+}
+.bejegyzes-div-flex{
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:#DDF2FD ;  
+    margin-bottom: 30px;
+}
+.kapcsolat-div{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.bg-color{
+    background-color:#164863;
+}
+.kapcsolat-div-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+}
+.kapcsolat-szoveg{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.kerdoiv-szoveg{
+    font-weight: 500;
+    margin: 0px;
+}
+.kozepre{
+    text-align: center;
+    margin:20px;
+}
+.logo{
+    width: 60px;
+    height:60px;
+    object-fit: contain;
+}
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h6{
+    text-align:center;
+}
+.olvasstovabb-button{
+    height:40px;
+    width: 120px;
+    background-color: gray;
+    color: white;
+    border:none;
+}
+.fekete-gomb{
+    height:40px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#164863;
+    transition:background-color 0.5s;
+    color: white;
+    border:none;
+}
+.fekete-gomb:hover{
+    background-color: #427D9D;
+    transition:background-color 0.5s;
+}
+.bejegyzes-button{
+    height:40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border:none;
+    margin-top:10px;
+}
+.torles-button{
+    height:40px;
+    width: 120px;
+    background-color: red;
+    color: white;
+    border:none;
+}
+.modositas-button{
+    height:40px;
+    width: 120px;
+    background-color: green;
+    color: white;
+    border:none;
+}
+.betutipus{
+    font-family: sans-serif;
+}
+.nincsbejegyzes{
+    margin-top: 100px;
+    text-align: center;
+}
+@media (max-width: 979px) {
+    body {
+      padding-top: 0px;
+    }
+  }

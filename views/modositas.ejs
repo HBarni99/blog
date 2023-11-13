@@ -1,0 +1,15 @@
+<%- include('./header.ejs') %>
+<body>
+    <p><h1>Edit post </h1> </p>
+    <form action="/modositott" method="POST">
+      <label for="vezeteknev">Name</label><br>
+      <input type="text"  name="vezeteknev" value="<%=bejegyzoNeve[bejegyzesSzama]  %>"><br>
+      <label for="cim">Title</label><br>
+      <input type="text" name="cim" value="<%=bejegyzesCime[bejegyzesSzama]  %>">
+      <label for="bejegyzes">Content</label><br>
+      <textarea  name="bejegyzes" placeholder="Write your post here"><%= bejegyzesTartalma[bejegyzesSzama] %>
+        </textarea>
+        <input type="submit" class="modositas-button" value="Save changes">
+    </form>
+  </body>
+  </html>

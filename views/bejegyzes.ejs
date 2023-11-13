@@ -1,0 +1,16 @@
+<%- include('./header.ejs') %>
+<body>
+    <div class="bejegyzesek-container-flex">
+        <div class="bejegyzes-div-flex">
+            <p><h3><%= bejegyzesCime[bejegyzesSzama] %></h3></p>
+            <p class="betutipus kozepre"><%= bejegyzesTartalma[bejegyzesSzama] %></p>
+            <p class="alairas jobbra">- <%= bejegyzoNeve[bejegyzesSzama]%></p>
+            <p class="alairas jobbra"><%= bejegyzesDatuma[bejegyzesSzama] %></p>
+            <p class="kozepre">
+                <a href="/modositas/<%= bejegyzesSzama %>" target="_parent"><button class="modositas-button">Edit</button></a>
+                <a href="/torles/<%= bejegyzesSzama %>" target="_parent"><button class="torles-button">Delete</button></a>   
+            </p>
+        </div>
+        <p><a href="/" target="_parent"><button class="fekete-gomb">Back to homepage</button></a></p>
+    </div>
+</body>

@@ -1,0 +1,21 @@
+<%- include('./header.ejs') %>
+<body>
+        <h1 class="focim">Blog posts</h1>
+            <% if (bejegyzesTartalma.length === 0){ %>
+            <h2 class="nincsbejegyzes focim"> There are no blog posts yet</h2>
+            <% }  %>
+    <div class="bejegyzesek-container">
+            <% if(locals.bejegyzoNeve && locals.bejegyzesCime && locals.bejegyzesTartalma){%>
+            <% for(let i=0; i<bejegyzoNeve.length;i++){ %>
+        <div class="bejegyzes-div">      
+            <h3> <%=bejegyzesCime[i] %></h3>
+            <h6>Author: <%= bejegyzoNeve[i] %></h6>
+            <p class="fooldal-bejegyzes betutipus kozepre" > <%= bejegyzesTartalma[i] %></p>
+            <p class="kozepre"><a href="/bejegyzes/<%= i %>" target="_parent"><button class="fekete-gomb">Read more</button></a></p>
+        </div>
+        <% } %>
+            <% } %>
+        
+    </div>
+</body>
+</html>
